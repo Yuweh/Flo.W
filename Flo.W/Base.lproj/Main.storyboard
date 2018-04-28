@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lty-EO-Ky7">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,98 +11,107 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="BM9-LQ-n4c">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Flo_W" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="Lty-EO-Ky7" customClass="ViewController" customModule="Flo_W" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pjn-1r-saO"/>
+                        <viewControllerLayoutGuide type="bottom" id="0vc-0W-3Cg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NHg-Sx-C8v">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wK3-Lw-fWi" customClass="PushButton" customModule="Flo_W" customModuleProvider="target">
-                                <rect key="frame" x="137" y="394" width="100" height="100"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fwx-uR-b9k">
+                                <rect key="frame" x="37.5" y="83.5" width="300" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v6k-Wv-64P" customClass="CounterView" customModule="Flo_W" customModuleProvider="target">
+                                        <rect key="frame" x="34.5" y="35" width="230" height="230"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEw-XQ-4lu">
+                                                <rect key="frame" x="104.5" y="93.5" width="22" height="43"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="230" id="C4N-Ux-hKR"/>
+                                            <constraint firstAttribute="height" constant="230" id="CId-sQ-EN1"/>
+                                            <constraint firstItem="CEw-XQ-4lu" firstAttribute="centerY" secondItem="v6k-Wv-64P" secondAttribute="centerY" id="UBL-og-rn0"/>
+                                            <constraint firstItem="CEw-XQ-4lu" firstAttribute="centerX" secondItem="v6k-Wv-64P" secondAttribute="centerX" id="VPw-oF-GjP"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="outlineColor">
+                                                <color key="value" red="0.1333333333" green="0.43137254899999999" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="counterColor">
+                                                <color key="value" red="0.3411764706" green="0.85490196080000003" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="f66-Ce-5Ox"/>
-                                    <constraint firstAttribute="height" constant="100" id="ssb-oZ-Aof"/>
+                                    <constraint firstItem="v6k-Wv-64P" firstAttribute="centerY" secondItem="Fwx-uR-b9k" secondAttribute="centerY" id="DzT-Ek-Sce"/>
+                                    <constraint firstAttribute="width" constant="300" id="K7I-MR-eLV"/>
+                                    <constraint firstAttribute="height" constant="300" id="ruk-2f-vjQ"/>
+                                    <constraint firstItem="v6k-Wv-64P" firstAttribute="centerX" secondItem="Fwx-uR-b9k" secondAttribute="centerX" id="sR3-eD-agA"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98B-HP-DKh" customClass="PushButton" customModule="Flo_W" customModuleProvider="target">
+                                <rect key="frame" x="137.5" y="403.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="c9G-5b-y6w"/>
+                                    <constraint firstAttribute="width" constant="100" id="hBq-t1-n6u"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                        <color key="value" red="0.3411764705882353" green="0.85490196078431369" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.3411764706" green="0.85490196080000003" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="pushButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="acq-wC-FOk"/>
+                                    <action selector="pushButtonPressed:" destination="Lty-EO-Ky7" eventType="touchUpInside" id="CHr-0R-4g7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BfO-bE-FcQ" customClass="PushButton" customModule="Flo_W" customModuleProvider="target">
-                                <rect key="frame" x="163" y="514" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJR-bb-Njk" customClass="PushButton" customModule="Flo_W" customModuleProvider="target">
+                                <rect key="frame" x="162.5" y="523.5" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="cQC-dl-M6q"/>
-                                    <constraint firstAttribute="height" constant="50" id="xjT-Iw-z7N"/>
+                                    <constraint firstAttribute="width" constant="50" id="AOR-C2-puH"/>
+                                    <constraint firstAttribute="height" constant="50" id="X04-6E-d4h"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                        <color key="value" red="0.93333333333333335" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.93333333330000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="pushButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jbY-Bz-duV"/>
+                                    <action selector="pushButtonPressed:" destination="Lty-EO-Ky7" eventType="touchUpInside" id="jgy-YD-XN6"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="920-c7-WQe" customClass="CounterView" customModule="Flo_W" customModuleProvider="target">
-                                <rect key="frame" x="72" y="124" width="230" height="230"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Zu-Bg-tj6">
-                                        <rect key="frame" x="94" y="99" width="42" height="29"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="42" id="2rh-Mq-Whr"/>
-                                            <constraint firstAttribute="height" constant="29" id="mub-db-UAs"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="9Zu-Bg-tj6" firstAttribute="top" secondItem="920-c7-WQe" secondAttribute="top" constant="99" id="5Oh-P2-dsI"/>
-                                    <constraint firstItem="9Zu-Bg-tj6" firstAttribute="centerX" secondItem="920-c7-WQe" secondAttribute="centerX" id="Ilz-ex-YCN"/>
-                                    <constraint firstAttribute="width" constant="230" id="yId-q0-Yai"/>
-                                    <constraint firstAttribute="height" constant="230" id="ymE-6n-IL0"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="counter">
-                                        <integer key="value" value="7"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="counterColor">
-                                        <color key="value" red="0.3411764705882353" green="0.85490196078431369" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="outlineColor">
-                                        <color key="value" red="0.13333333333333333" green="0.43137254901960786" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="BfO-bE-FcQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0PL-Zc-PhM"/>
-                            <constraint firstItem="wK3-Lw-fWi" firstAttribute="top" secondItem="920-c7-WQe" secondAttribute="bottom" constant="40" id="Ag4-mQ-V94"/>
-                            <constraint firstItem="wK3-Lw-fWi" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="100" id="M92-Av-p4Y"/>
-                            <constraint firstItem="920-c7-WQe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NIX-et-WMw"/>
-                            <constraint firstItem="BfO-bE-FcQ" firstAttribute="top" secondItem="wK3-Lw-fWi" secondAttribute="bottom" constant="20" id="W8C-Fm-rNf"/>
-                            <constraint firstItem="wK3-Lw-fWi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="k0D-Hq-ycj"/>
+                            <constraint firstItem="Fwx-uR-b9k" firstAttribute="centerY" secondItem="NHg-Sx-C8v" secondAttribute="centerY" constant="-100" id="28P-TY-krh"/>
+                            <constraint firstItem="lJR-bb-Njk" firstAttribute="top" secondItem="98B-HP-DKh" secondAttribute="bottom" constant="20" id="ERo-RO-hTI"/>
+                            <constraint firstItem="98B-HP-DKh" firstAttribute="centerX" secondItem="NHg-Sx-C8v" secondAttribute="centerX" id="LgL-fB-9ct"/>
+                            <constraint firstItem="Fwx-uR-b9k" firstAttribute="centerX" secondItem="NHg-Sx-C8v" secondAttribute="centerX" id="Nad-Xn-mKQ"/>
+                            <constraint firstItem="98B-HP-DKh" firstAttribute="centerY" secondItem="NHg-Sx-C8v" secondAttribute="centerY" constant="120" id="l4t-Pj-VG1"/>
+                            <constraint firstItem="lJR-bb-Njk" firstAttribute="centerX" secondItem="NHg-Sx-C8v" secondAttribute="centerX" id="pS2-GC-Uoh"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="hVw-FS-ryf"/>
                     </view>
                     <connections>
-                        <outlet property="counterLabel" destination="9Zu-Bg-tj6" id="OLB-ts-0HC"/>
-                        <outlet property="counterView" destination="920-c7-WQe" id="Xzv-O7-rb1"/>
+                        <outlet property="counterLabel" destination="CEw-XQ-4lu" id="Euz-qA-egg"/>
+                        <outlet property="counterView" destination="v6k-Wv-64P" id="LzB-tV-AOh"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6X3-Eh-mZM" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="115.59220389805098"/>
+            <point key="canvasLocation" x="31" y="74"/>
         </scene>
     </scenes>
 </document>
