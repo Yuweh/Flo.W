@@ -17,6 +17,8 @@ Specifically, it makes it easy to track how much water you drink. “They” tel
 
 Coming soon when completed XD
 
+### Part 1 <img src="https://github.com/Yuweh/Flo.W/blob/master/Part1-Screenshot.png" width="400">
+
 ------
 
 [![forthebadge](http://forthebadge.com/images/badges/made-with-swift.svg)](http://forthebadge.com) [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
